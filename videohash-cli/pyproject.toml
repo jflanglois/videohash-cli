@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "videohash-cli_jflanglois"
+version = "0.1"
+authors = [
+  { name="Julien Langlois", email="yourstruly@julienlanglois.me" },
+]
+description = "CLI for the videohash package"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "argparse-dataclass",
+  "validators",
+  "videohash"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/jflanglois/videohash-cli"
+Issues = "https://github.com/jflanglois/videohash-cli/issues"
+
+[project.scripts]
+videohash-cli = "videohash_cli:main"
